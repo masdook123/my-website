@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PPMHSS – Panakkad Pookkoya Thangal Memorial HSS</title>
-  <style>
-    :root{--blue1:#0b4f8a;--blue2:#002b5b;--muted:#556170;--card:#fff;--radius:12px;--container:1000px;font-family:sans-serif}
-    *{box-sizing:border-box}
-    body{margin:0;background:#f4f6fb;color:#07213a;line-height:1.5;scroll-behavior:smooth}
-    header{background:linear-gradient(135deg,var(--blue1),var(--blue2));color:#fff;padding:30px;text-align:center;border-bottom-left-radius:20px;border-bottom-right-radius:20px}
-    header h1{font-size:2.4rem;margin-bottom:8px}
-    nav{position:sticky;top:0;display:flex;justify-content:center;gap:16px;background:#fff;padding:10px;box-shadow:0 4px 12px rgba(2,6,23,.1);z-index:100}
-    nav a{color:var(--blue2);text-decoration:none;font-weight:600;padding:6px 10px;border-radius:6px;transition:all .15s}
-    nav a:hover{background:rgba(2,6,23,.05);transform:translateY(-2px)}
-    main{max-width:var(--container);margin:20px auto;padding:0 16px}
-    .hero{height:300px;border-radius:12px;overflow:hidden;margin-bottom:20px;
-            background:linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.1)),
-            url("https://upload.wikimedia.org/wikipedia/commons/3/33/PPM.Highschool.Kottukkara.jpg") center/cover no-repeat;
-            color:#fff;display:flex;align-items:center;padding:20px;box-shadow:0 6px 24px rgba(2,6,23,.1)}
-    .hero h2{margin:0;font-size:1.8rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:20px}
-    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 10px 24px rgba(2,6,23,.05)}
-    h3{color:var(--blue2);margin-top:0}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:16px}
-    .gallery img{width:100%;height:100px;object-fit:cover;border-radius:8px}
-    footer{background:var(--blue2);color:#fff;text-align:center;padding:16px;border-radius:8px;margin-top:20px;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPMHSS - School Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #0055a5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>PPMHSS</h1>
-    <p>Panakkad Pookkoya Thangal Memorial Higher Secondary School (Kottukkara, Kondotty)</p>
-  </header>
-  <nav>
-    <a href="#about">About</a><a href="#stats">Stats</a><a href="#streams">Streams</a>
-    <a href="#achievements">Achievements</a><a href="#programs">Programs</a><a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <main>
-    <section class="hero"><h2>Shaping the future since 1976</h2></section>
-    <section id="about" class="card"><h3>About PPMHSS</h3><p>Founded in 1976 by the Nediyiruppu Muslim Educational Association to uplift educationally backward communities, PPMHSS has grown into a leading institution in Malappuram with strong academics, engaging student life, and modern infrastructure.</p></section>
-    <section id="stats"><div class="grid">
-      <div class="card"><strong>Students</strong><p style="color:var(--muted)">~4,000 currently enrolled (8–12)</p></div>
-      <div class="card"><strong>Staff</strong><p style="color:var(--muted)">~100–150 faculty members</p></div>
-      <div class="card"><strong>Divisions</strong><p style="color:var(--muted)">Over 55–70 class divisions</p></div>
-      <div class="card"><strong>HS Started</strong><p style="color:var(--muted)">2000–01 (Science & Humanities)</p></div>
-      <div class="card"><strong>New Streams</strong><p style="color:var(--muted)">Added CS, Sociology & Commerce in 2002</p></div>
-    </div></section>
-    <section id="achievements" class="card"><h3>Achievements</h3><ul style="color:var(--muted)">
-      <li>9‐year run of district trophies for highest pass %</li>
-      <li>"Dr. Mohiyidheen" state-level Arabic excellence award</li>
-      <li>Science fair wins at state & national levels (Shimoga, Salem, Ahmedabad, Hyderabad, Chennai)</li>
-    </ul></section>
-    <section id="programs" class="card"><h3>Key Programs & Activities</h3><p style="color:var(--muted)">PPMHSS offers a vibrant mix: hobby clubs, debates, creative writing, exhibitions, youth parliament, Scouts/Guides, NCC, sports, music, dance, workshops, career counseling, annual events and more.</p></section>
-    <section id="gallery" class="card"><h3>Gallery</h3><div class="gallery">
-      <img src="https://ppmhsskottukkara.com/40th-anniversary/1.jpg" alt="Event with balloons">
-      <img src="https://ppmhsskottukkara.com/40th-anniversary/2.jpg" alt="School assembly">
-      <img src="https://ppmhsskottukkara.com/about/school.jpg" alt="School building">
-      <img src="https://ppmhsskottukkara.com/logo.png" alt="School crest">
-    </div></section>
-    <section id="contact" class="card"><h3>Contact & Location</h3><p style="color:var(--muted)">
-        Kottukkara, Kondotty, Malappuram – PIN 673638<br>
-        Phones: +91 483 2711374 (HS), +91 483 2714174 (HSE)<br>
-        Email: ppmhsskottukkara@gmail.com<br>
-        Located 2 km from Kondotty along NH-213. Strong transport access.</p></section>
-  </main>
-  <footer>&copy; 2025 PPMHSS • Panakkad Pookkoya Thangal Memorial HSS • All Rights Reserved</footer>
+    <header>
+        <h1>PPMHSS - Punnathala</h1>
+        <p>Serving education with excellence since 1957</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#history">History</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Our School</h2>
+        <p>PPMHSS (Punnathala Public Muslim Higher Secondary School) is dedicated to providing quality education and holistic development for students in the Malappuram district of Kerala. Our school combines academic excellence with strong moral values.</p>
+    </section>
+
+    <section id="history">
+        <h2>Our History</h2>
+        <p>Established in 1957, PPMHSS has been a pioneer in shaping the future of thousands of students. Over the years, we have expanded our academic programs, modernized our infrastructure, and embraced technology to enhance learning experiences.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/School_Building.jpg/640px-School_Building.jpg" alt="School Building">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/School_Library.jpg/640px-School_Library.jpg" alt="Library">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Classroom.jpg/640px-Classroom.jpg" alt="Classroom">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@ppmhss.edu.in</p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Address: PPMHSS, Punnathala, Malappuram, Kerala, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PPMHSS. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
